@@ -1,0 +1,44 @@
+{
+  "main": "app.js",
+  "version": "1.0.0",
+  "name": "credit_card_services",
+  "description": "HBL debit card services for the valueble customers",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "swagger": "swagger-jsdoc -d swaggerDef.js -o swagger.yaml",
+    "test": "NODE_ENV=TEST mocha --timeout 30000 ./tests/**/*.js --exit"
+  },
+  "keywords": [],
+  "author": "Laique Ali",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.21.1",
+    "config": "3.3.3",
+    "express": "4.17.1",
+    "express-joi-validation": "5.0.0",
+    "express-pino-logger": "5.0.0",
+    "http": "0.0.1-security",
+    "joi": "17.3.0",
+    "node-cache": "^5.1.2",
+    "pino": "6.11.0",
+    "pino-multi-stream": "5.2.0",
+    "socket.io": "^2.3.0",
+    "stjs": "0.0.5",
+    "swagger-jsdoc": "6.0.1"
+  },
+  "devDependencies": {
+    "eslint": "7.18.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-security": "1.4.0",
+    "eslint-plugin-standard": "5.0.0",
+    "eslint-config-standard": "16.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": ""
+    }
+  }
+}

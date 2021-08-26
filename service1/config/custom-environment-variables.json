@@ -1,0 +1,24 @@
+{
+    "api": {
+      "messageQueue": {
+        "v1": {
+          "origin1": {
+            "jwtToken": {
+              "username": "O1_USERNAME",
+              "password": "O1_PASSWORD",
+              "postURL": "O1_JWT_TOKEN_URL"
+            },
+            "masterURL": "O1_MASTER_URL"
+          },
+          "origin2": {
+            "jwtToken": {
+                "username": "O2_USERNAME",
+                "password": "O2_PASSWORD",
+                "postURL": "O2_JWT_TOKEN_URL"
+            },
+            "masterURL": "O2_MASTER_URL"
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,20 @@
+{
+  "PORT": 9100,
+  "logging": {
+    "level": "info",
+    "basePath": "logs/",
+    "defaultFile": "server.log"
+  },
+  "api": {
+      "v1": {
+        "service": {
+          "method": "POST",
+          "apiType": "REST",
+          "requestURL": "http://localhost:9100/api/service/test"
+        }
+      }
+  },
+  "rest": {
+    "requestTimeOut": 90000
+  }
+}
